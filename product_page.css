@@ -21,6 +21,8 @@ h3.productPageTitle{
 
 a.product-page-download-button{
 	width: 245px !important;
+	border: 1px solid #4386e5 !important;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12) !important;
 }
 
 a.product-page-download-button .download-icon .upper-download-part{
