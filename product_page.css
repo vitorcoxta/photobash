@@ -1,0 +1,281 @@
+h3.productPageTitle{
+	margin-top: 0.6em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.svg-icon,
+.medium-svg-icon{
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 4px;
+}
+
+.svg-icon{
+	height: 15px;
+}
+
+.medium-svg-icon{
+	height: 20px;
+}
+
+a.product-page-download-button{
+	width: 245px !important;
+}
+
+a.product-page-download-button .download-icon .upper-download-part{
+	display: block;
+}
+
+a.product-page-download-button .download-icon .lower-download-part{
+	display: none;
+}
+
+a.product-page-download-button:hover .download-icon .upper-download-part{
+	display: none;
+}
+
+a.product-page-download-button:hover .download-icon .lower-download-part{
+	display: block;
+}
+
+.white-svg{
+	fill: #ffffff;
+}
+
+.blue-svg{
+	fill: #4A95FE;
+}
+
+.svg-icon-product-page-title{
+	height: 1.18em;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+#content > div:first-child{
+	max-width: 1080px;
+    padding: 30px 34px;
+    margin: auto;
+}
+
+#content > div:first-child div.content.page-content {
+	padding: 0;
+}
+
+#content > div:nth-child(2){
+	width: 100%;
+}
+
+#content > div:nth-child(2) div.content.page-content{
+	max-width: 100%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+#content > div:nth-child(2) div.content.page-content div.image-block-wrapper{
+    padding: 0 !important;
+}
+
+#content > div:nth-child(2) div.content.page-content div.image-block-wrapper img{
+    position: static !important;
+}
+
+#content > div:nth-child(2) div.content.page-content div.sqs-block-content div.intrinsic{
+	max-width: 100% !important;
+}
+
+figure.tint {
+  position: relative;
+}
+
+figure.tint:before {
+  content: "";
+  display: block;	
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(68, 74, 82, 0.5);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+figure.tint:hover:before {
+  background: none;
+}
+
+figure.tint span,
+figure.tint svg path{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+
+figure.tint span{
+	color: white;
+	text-shadow: 0px 0px 5px #000000;
+}
+
+figure.tint svg path{
+	filter: url(#dropshadow);
+}
+
+figure.tint:hover span{
+	color: transparent;
+	text-shadow: none;
+}
+
+figure.tint:hover svg path{
+	fill: transparent;
+	filter: none;
+}
+
+div.mainPackInfoContainer {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 60px;
+    -moz-column-gap: 60px;
+    -webkit-column-gap: 60px;
+    text-align: left;
+    padding-top: 30px;
+}
+
+div.mainPackInfoContainer div.blockKey{
+    font-weight: bold;
+    float: left;
+    width: 45%;
+    padding-bottom: 15px;
+}
+
+div.mainPackInfoContainer div.blockValue{
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+    padding-bottom: 15px;
+}
+
+div.sqs-block.horizontalrule-block.sqs-block-horizontalrule{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+div.sqs-block.code-block.sqs-block-code {
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 1150px) {
+    div.mainPackInfoContainer div.blockKey{
+	    width: 50%;
+	}
+
+	div.mainPackInfoContainer div.blockValue{
+	    margin-left: 0;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+    div.mainPackInfoContainer {
+		column-count: 1;
+	    -moz-column-count: 1;
+	    -webkit-column-count: 1;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	a.product-page-download-button{
+		width: 200px !important;
+	}
+
+}
+
+@media only screen and (max-width: 850px) {
+	h3.productPageTitle{
+		font-size: 27px !important;
+	}
+
+	a.product-page-download-button{
+		width: 130px !important;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	h3.productPageTitle{
+		font-size: 24px !important;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	a.product-page-download-button{
+		width: 250px !important;
+	}
+
+	h3.productPageTitle{
+		text-align: center;
+		margin-top: 0;
+	}
+
+	#content > div:nth-child(2){
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	a.product-page-download-button{
+		width: 200px !important;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	h3.productPageTitle{
+		font-size: 21px !important;
+	}
+
+	a.product-page-download-button{
+		width: 130px !important;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+   #siteWrapper{
+       font-size: 11px;
+   }
+}
+
+@media only screen and (max-width: 330px) {
+	div.mainPackInfoContainer div.blockKey{
+	    width: 45%;
+	}
+
+	div.mainPackInfoContainer div.blockValue{
+	    width: 50%;
+	    padding-left: 5%;
+	}
+}
+
+@media only screen and (max-width: 310px) {
+   #siteWrapper{
+       font-size: 10px;
+   }
+}
+
+@media only screen and (max-width: 290px) {
+   #siteWrapper{
+       font-size: 9px;
+   }
+}
