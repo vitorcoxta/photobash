@@ -1,3 +1,20 @@
+a.close-button-product-page {
+    font-family: Arial, "Montserrat", "Nimbus Sans L", sans-serif !important;
+    font-size: 18px;
+    line-height: 25px;
+    top: 50px;
+    right: 30px;
+    display: block;
+    width: 35px;
+    text-align: center;
+    float: right;
+    position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+    width: 25px;
+    padding: 0;
+}
+
 h3.productPageTitle{
 	margin-top: 0.6em;
 	margin-bottom: 0;
@@ -62,6 +79,15 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
 }
 
 #content > div:first-child div.content.page-content {
+	padding: 0;
+}
+
+#content > div:first-child div.content.page-content div.row.sqs-row:first,
+#content > div:first-child div.content.page-content div.row.sqs-row:first > div.col {
+	height: 0;
+}
+
+#content > div:first-child div.content.page-content div.row.sqs-row:first > div.col > div.sqs-block.code-block.sqs-block-code {
 	padding: 0;
 }
 
