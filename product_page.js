@@ -1,6 +1,6 @@
 document.oncontextmenu = function(e){
 	var target = (typeof e !="undefined")? e.target: event.srcElement
-	if (target.tagName == "IMG" || (target.tagName == 'A' && target.firstChild.tagName == 'IMG'))
+	if (target.tagName == "IMG" || (target.tagName == 'A' && target.firstChild.tagName == 'IMG') || (target.tagName == 'A' && target.children.length == 2 && target.children[1].tagName == 'IMG'))
 		return false;
 }
 
