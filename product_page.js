@@ -16,18 +16,18 @@ $(document).ready(function(){
 	});
 
 	$("#content > div:first-child div.content.page-content div.row.sqs-row:first").prepend("<a class=\"button close-button-product-page\">&#215;</a>");
-});
 
-$("div.margin-wrapper a.image-slide-anchor").on("click", function(e){
-	if(e.originalEvent != undefined){
-    	$(this).children("img").click();
-    }
-});
+	$("div.margin-wrapper a.image-slide-anchor").on("click", function(e){
+		if(e.originalEvent != undefined){
+	    	$(this).children("img").click();
+	    }
+	});
 
-$("a.close-button-product-page").on("click", function(){
-    if(history.length === 1){
-        onclick=window.close()
-    } else {
-        history.back();
-    }
+	$("a.close-button-product-page").on("click", function(){
+	    if(history.length === 1){
+	        onclick=window.close()
+	    } else {
+	        history.back();
+	    }
+	});
 });
