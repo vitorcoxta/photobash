@@ -3,7 +3,7 @@ a.close-button-product-page {
     font-size: 18px;
     line-height: 25px;
     top: 50px;
-    right: 30px;
+    right: 10px;
     display: block;
     width: 35px;
     text-align: center;
@@ -79,15 +79,6 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
 }
 
 #content > div:first-child div.content.page-content {
-	padding: 0;
-}
-
-#content > div:first-child div.content.page-content div.row.sqs-row:first,
-#content > div:first-child div.content.page-content div.row.sqs-row:first > div.col {
-	height: 0;
-}
-
-#content > div:first-child div.content.page-content div.row.sqs-row:first > div.col > div.sqs-block.code-block.sqs-block-code {
 	padding: 0;
 }
 
@@ -279,6 +270,10 @@ div.margin-wrapper a:hover:after {
 
 	#content > div:nth-child(2){
 		display: none;
+	}
+
+	a.close-button-product-page {
+	    display: none;
 	}
 }
 
