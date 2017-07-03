@@ -38,11 +38,15 @@ $(document).ready(function(){
 	$('div.margin-wrapper a').on('click', function(event){
 		if(! $("div.mainPackInfoContainer").hasClass("disabled")){
 			$("div.mainPackInfoContainer").addClass("disabled");
+			$(".svg-icon-product-page-title").addClass("disabled");
+			$("#content > div:first-child div.content.page-content").addClass("disabled");
 		}
 
 		$(".sqs-lightbox-close").on("click", function(){
 		    if($("div.mainPackInfoContainer").hasClass("disabled")){
 				$("div.mainPackInfoContainer").removeClass("disabled");
+				$(".svg-icon-product-page-title").removeClass("disabled");
+				$("#content > div:first-child div.content.page-content").removeClass("disabled");
 			}
 		});
 
