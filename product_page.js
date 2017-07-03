@@ -40,6 +40,7 @@ $(document).ready(function(){
 			$("div.mainPackInfoContainer").addClass("disabled");
 			$(".svg-icon-product-page-title").addClass("disabled");
 			$("#content > div:first-child div.content.page-content").addClass("disabled");
+			$("figure.tint").addClass("disabled");
 		}
 
 		$(".sqs-lightbox-close").on("click", function(){
@@ -47,6 +48,7 @@ $(document).ready(function(){
 				$("div.mainPackInfoContainer").removeClass("disabled");
 				$(".svg-icon-product-page-title").removeClass("disabled");
 				$("#content > div:first-child div.content.page-content").removeClass("disabled");
+				$("figure.tint").removeClass("disabled");
 			}
 		});
 

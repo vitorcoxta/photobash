@@ -118,7 +118,11 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
 }
 
 figure.tint {
-  position: relative;
+	position: relative;
+}
+
+figure.tint.disabled{
+	display: none;
 }
 
 figure.tint:before {
@@ -225,9 +229,6 @@ div.sqs-block.code-block.sqs-block-code {
 
 div.margin-wrapper a {
     border-radius: 4px;
-}
-
-div.margin-wrapper a {
     cursor: pointer !important;
 }
 
