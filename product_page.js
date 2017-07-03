@@ -55,6 +55,9 @@ $(document).ready(function(){
 		$(document).keyup(function(e) {
 			if (e.keyCode === 27 && $("div.mainPackInfoContainer").hasClass("disabled")){
 				$("div.mainPackInfoContainer").removeClass("disabled");
+				$(".svg-icon-product-page-title").removeClass("disabled");
+				$("#content > div:first-child div.content.page-content").removeClass("disabled");
+				$("figure.tint").removeClass("disabled");
 			}
 		});
 	});
