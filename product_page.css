@@ -15,6 +15,10 @@ a.close-button-product-page {
     padding: 0;
 }
 
+img{
+    pointer-events: none;
+}
+
 h3.productPageTitle{
 	margin-top: 0.6em;
 	margin-bottom: 0;
