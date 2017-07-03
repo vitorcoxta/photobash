@@ -179,6 +179,12 @@ div.mainPackInfoContainer {
     padding-top: 30px;
 }
 
+div.mainPackInfoContainer.disabled {
+    column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+}
+
 div.mainPackInfoContainer div.blockKey{
     font-weight: bold;
     float: left;
