@@ -47,7 +47,7 @@ $(document).ready(function(){
 		});
 
 		$(document).keyup(function(e) {
-			if($("div.mainPackInfoContainer").hasClass("disabled")){
+			if (e.keyCode === 27 && $("div.mainPackInfoContainer").hasClass("disabled")){
 				$("div.mainPackInfoContainer").removeClass("disabled");
 			}
 		});
