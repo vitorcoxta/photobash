@@ -30,4 +30,8 @@ $(document).ready(function(){
 	        history.back();
 	    }
 	});
+
+	$('div.margin-wrapper a').on('dragstart', function(event){
+		event.preventDefault();
+	});
 });
