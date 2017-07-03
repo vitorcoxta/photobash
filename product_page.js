@@ -45,5 +45,11 @@ $(document).ready(function(){
 				$("div.mainPackInfoContainer").removeClass("disabled");
 			}
 		});
+
+		$(document).keyup(function(e) {
+			if($("div.mainPackInfoContainer").hasClass("disabled")){
+				$("div.mainPackInfoContainer").removeClass("disabled");
+			}
+		});
 	});
 });
