@@ -34,4 +34,16 @@ $(document).ready(function(){
 	$('div.margin-wrapper a').on('dragstart', function(event){
 		event.preventDefault();
 	});
+
+	$('div.margin-wrapper a').on('click', function(event){
+		/*if(! $("div.mainPackInfoContainer").hasClass("disabled")){
+			$("div.mainPackInfoContainer").addClass("disabled");
+		}*/
+
+		console.log("a clicked");
+
+		$(".sqs-lightbox-close").on("click", function(){
+		    console.log("sqs-lightbox-close clicked");
+		});
+	});
 });
