@@ -36,18 +36,18 @@ $(document).ready(function(){
 	});
 
 	$('div.margin-wrapper a').on('click', function(event){
-		if(! $("div.mainPackInfoContainer").hasClass("disabled")){
+		if(! $("#content").hasClass("disabled")){
 			$("#content").addClass("disabled");
 		}
 
 		$(".sqs-lightbox-close").on("click", function(){
-		    if($("div.mainPackInfoContainer").hasClass("disabled")){
+		    if($("#content").hasClass("disabled")){
 				$("#content").removeClass("disabled");
 			}
 		});
 
 		$(document).keyup(function(e) {
-			if (e.keyCode === 27 && $("div.mainPackInfoContainer").hasClass("disabled")){
+			if (e.keyCode === 27 && $("#content").hasClass("disabled")){
 				$("#content").removeClass("disabled");
 			}
 		});
