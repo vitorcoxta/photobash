@@ -80,11 +80,6 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
     margin-top: -10px;
 }
 
-.svg-icon-product-page-title.disabled {
-    height: none;
-    margin-top: none;
-}
-
 #content > div:first-child{
 	max-width: 1080px;
     padding: 30px 34px;
@@ -93,10 +88,6 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
 
 #content > div:first-child div.content.page-content {
 	padding: 0;
-}
-
-#content > div:first-child div.content.page-content.disabled {
-    padding: none;
 }
 
 #content > div:nth-child(2){
@@ -192,24 +183,11 @@ div.mainPackInfoContainer {
     padding-top: 30px;
 }
 
-div.mainPackInfoContainer.disabled {
-    column-count: 1;
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-}
-
 div.mainPackInfoContainer div.blockKey{
     font-weight: bold;
     float: left;
     width: 45%;
     padding-bottom: 15px;
-}
-
-div.mainPackInfoContainer.disabled div.blockKey {
-    font-weight: bold;
-    float: none;
-    width: none;
-    padding-bottom: none;
 }
 
 div.mainPackInfoContainer div.blockValue{
