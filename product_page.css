@@ -1,3 +1,7 @@
+#content.disabled{
+	margin-top: 1000px;
+}
+
 a.close-button-product-page {
     font-family: Arial, "Montserrat", "Nimbus Sans L", sans-serif !important;
     font-size: 18px;
@@ -78,6 +82,7 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
 
 .svg-icon-product-page-title.disabled {
     height: none;
+    margin-top: none;
 }
 
 #content > div:first-child{
@@ -119,10 +124,6 @@ a.product-page-download-button:hover .download-icon .lower-download-part{
 
 figure.tint {
 	position: relative;
-}
-
-figure.tint.disabled{
-	display: none;
 }
 
 figure.tint:before {
