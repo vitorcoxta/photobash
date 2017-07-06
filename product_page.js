@@ -36,18 +36,20 @@ $(document).ready(function(){
 	});
 
 	$('div.margin-wrapper a').on('click', function(event){
-		if(! $("#content").hasClass("disabled")){
-			$("#content").addClass("disabled");
-		}
+		$("#content").addClass("disabled");
 
 		$(".sqs-lightbox-close").on("click", function(){
-		    if($("#content").hasClass("disabled")){
+			$("#content").removeClass("disabled");
+		});
+
+		$("div.sqs-lightbox-slide").on("click", function(e){
+			if($(e.target).hasClass("sqs-active-slide")){
 				$("#content").removeClass("disabled");
 			}
 		});
 
 		$(document).keyup(function(e) {
-			if (e.keyCode === 27 && $("#content").hasClass("disabled")){
+			if (e.keyCode === 27){
 				$("#content").removeClass("disabled");
 			}
 		});
