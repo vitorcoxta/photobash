@@ -124,12 +124,6 @@ $(document).ready(function(){
 		$('.container-'+i).wrapAll('<div class="filterContainer hidden" />');
 	}
 
-	// set the correct images width
-	$(".filterContainer .thumb-image").each(function(index, element){
-		$(element).attr("src", $(element).attr("src").replace(/\?format=\d*w/g, "?format=750w"));
-		$(element).attr("data-image-resolution", "750w");
-	});
-
 	// reorganize html and fixing up css
 	$('.filterContainer').wrapAll('<div class="allContainers" />');
 	$('.allContainers').closest('.sqs-col-1').css('width', '100%');
@@ -284,6 +278,20 @@ $(window).on("load", function() {
 });
 
 $(window).on("resize", function(){
+	// set the correct images width if they are still not correct
+	if( $($(".filterContainer .thumb-image")[0]).attr("src") != undefined && ! $($(".filterContainer .thumb-image")[0]).attr("src").endsWith("750w")){
+		$(".filterContainer .thumb-image").each(function(index, element) {
+	    	var src = $(element).attr("src");
+	    	if(src == undefined || src == ""){
+	    		src = $(element).attr("data-src");
+	    	}
+	    	if(src != undefined && src != ""){
+	        	$(element).attr("src", src.replace(/\?format=\d*w/g, "?format=750w"));
+	        }
+	        $(element).attr("data-image-resolution", "750w");
+	    });
+	}
+
 	// sets the allContainers height to correctly place the show more results button
     if($(".filterContainer:not(.hidden)").last().offset() != undefined){
     	setTimeout(function(){
