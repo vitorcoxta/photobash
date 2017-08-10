@@ -98,12 +98,8 @@ function resetPagination(){
 }
 
 function removePagination() {
-	if($("div.loader").is(":visible")) {
-		setTimeout(removePagination, 100);
-	} else {
-		$('#showMore').addClass("hidden");
-		$(".filterContainer").removeClass("hidden");
-	}
+	$('#showMore').addClass("hidden");
+	$(".filterContainer").removeClass("hidden");
 }
 
 $(document).ready(function(){
