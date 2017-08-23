@@ -17,6 +17,6 @@ $(document).ready(function(){
     $(".markdown-block .sqs-block-content h2").nextUntil("h2").slideToggle();
     $(".markdown-block .sqs-block-content h2").click(function() {
     	$(".markdown-block .sqs-block-content h2").nextUntil("h2").slideUp();
-    $(this).nextUntil("h2").slideDown();
+    	$(this).nextUntil("h2").slideDown();
     });
 });

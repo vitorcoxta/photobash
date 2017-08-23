@@ -54,4 +54,9 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	$( 'a.product-page-download-button' ).click(function() {
+		fbq('track', 'AddToCart', {
+		});
+	});
 });
