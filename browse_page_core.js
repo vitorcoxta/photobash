@@ -267,6 +267,37 @@ $(document).ready(function(){
     if($(".filterContainer:not(.hidden)").last().offset() != undefined){
     	$(".allContainers").height($(".filterContainer:not(.hidden)").last().offset().top - $(".filterContainer:not(.hidden)").first().offset().top + $(".filterContainer:not(.hidden)").last().height() + 1);
     }
+
+    // replace svgs if resolution is high
+	if(window.screen.availWidth >= 2200 && window.screen.availHeight >= 1440){
+		var replacingImagesPopupInfo = ["https://www.photobash.org/s/Vector_Icon_MainCategory.png", "https://www.photobash.org/s/Vector_Icon_Price.png", "https://www.photobash.org/s/Vector_Icon_Size.png", "https://www.photobash.org/s/Vector_Icon_PhotoCount.png", "https://www.photobash.org/s/Vector_Icon_CameraModel.png", "https://www.photobash.org/s/Vector_Icon_FocalRange.png", "https://www.photobash.org/s/Vector_Icon_Format.png", "https://www.photobash.org/s/Vector_Icon_MinResolution.png", "https://www.photobash.org/s/Vector_Icon_MaxResolution.png", "https://www.photobash.org/s/Vector_Icon_Location.png"];
+
+		$(".mainPackInfoContainer").each(function(index, element){
+			$(element).find(".blockKey svg").each(function(index, element){
+				$(element).replaceWith("<img class=\"svg-icon\" src=\""+replacingImagesPopupInfo[index]+"\">");
+			});
+		});
+		
+		$("svg.camera-icon").replaceWith("<img class=\"camera-icon\" src=\"https://www.photobash.org/s/Vector_Icon_CameraModel.png\">");
+
+		$("svg.preview-product-icon").replaceWith("<img class=\"preview-product-icon\" src=\"https://www.photobash.org/s/Vector_Icon_ProductPage1.png\">");
+		new Image().src = "https://www.photobash.org/s/Vector_Icon_ProductPage2.png";
+		$("img.preview-product-icon").parent().on("mouseover", function(){
+			$(this).find("img.preview-product-icon").attr("src", "https://www.photobash.org/s/Vector_Icon_ProductPage2.png");
+		});
+		$("img.preview-product-icon").parent().on("mouseout", function(){
+			$(this).find("img.preview-product-icon").attr("src", "https://www.photobash.org/s/Vector_Icon_ProductPage1.png");
+		});
+
+		$("svg.download-icon").replaceWith("<img class=\"download-icon\" src=\"https://www.photobash.org/s/Vector_Icon_Download1.png\">");
+		new Image().src = "https://www.photobash.org/s/Vector_Icon_Download2.png";
+		$("a.downloadLink").on("mouseover", function(){
+			$(this).find("img.download-icon").attr("src", "https://www.photobash.org/s/Vector_Icon_Download2.png");
+		});
+		$("a.downloadLink").parent().on("mouseout", function(){
+			$(this).find("img.download-icon").attr("src", "https://www.photobash.org/s/Vector_Icon_Download1.png");
+		});
+	}
 });
 
 $(window).on("load", function() {

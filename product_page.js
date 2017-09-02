@@ -59,4 +59,13 @@ $(document).ready(function(){
 		fbq('track', 'AddToCart', {
 		});
 	});
+
+	// replace svgs if resolution is high
+	if(window.screen.availWidth >= 2160 && window.screen.availHeight >= 1400){
+		var replacingImages = ["https://www.photobash.org/s/Vector_Icon_MainCategory.png", "https://www.photobash.org/s/Vector_Icon_Price.png", "https://www.photobash.org/s/Vector_Icon_Size.png", "https://www.photobash.org/s/Vector_Icon_PhotoCount.png", "https://www.photobash.org/s/Vector_Icon_CameraModel.png", "https://www.photobash.org/s/Vector_Icon_FocalRange.png", "https://www.photobash.org/s/Vector_Icon_Format.png", "https://www.photobash.org/s/Vector_Icon_MinResolution.png", "https://www.photobash.org/s/Vector_Icon_MaxResolution.png", "https://www.photobash.org/s/Vector_Icon_Location.png"];
+		
+		$(".blockKey svg").each(function(index, element){
+			$(element).replaceWith("<img class=\"svg-icon\" src=\""+replacingImages[index]+"\">");
+		});
+	}
 });
